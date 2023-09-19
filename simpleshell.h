@@ -1,5 +1,5 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef SIMPLESHELL_H
+#define SIMPLESHELL_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -38,19 +38,18 @@ extern char **environ;
 
 /**
  * enum work_shell - singly linked list
- * @bi: it holds positive 2
- * @nbi: it holds negative 2
  * @n_neg: it holds negative -1
  * @n_pos: it holds positive 1
+ * @bi: it holds postive 2
+ * @nbi: it holds negative -2
  * @empt: it holds zero 0
  */
-
 enum work_shell
 {
-	n_neg = -1,
+        n_neg = -1,
 	n_pos = 1,
-	nbi = -2,
 	bi = 2,
+	nbi = -2,
 	empt = 0
 };
 

@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "simpleshell.h"
 
 /**
 * get_environ - returns the string array copy of our environ
@@ -30,7 +30,7 @@ int _unsetenv(info_t *info, char *var)
 	size_t a = empt;
 	char *p;
 
-	if (!node || !var)
+	if (!var || !node)
 		return (empt);
 
 	while (node)
